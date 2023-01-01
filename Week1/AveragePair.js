@@ -24,3 +24,4 @@ function averagePair(a, n) {
     /** 이도 저도 아니면 실패! */
     return false
 }
+//PR
