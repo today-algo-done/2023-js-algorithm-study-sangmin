@@ -18,4 +18,3 @@ function isSubsequence(a, b) {
         return true     //false
     }
 }
-//PR

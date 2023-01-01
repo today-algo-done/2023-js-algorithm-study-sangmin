@@ -19,4 +19,3 @@ function validAnagram(first, second) {
 
     return true
 }
-//PR

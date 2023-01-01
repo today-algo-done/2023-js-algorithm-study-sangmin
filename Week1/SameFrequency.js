@@ -7,4 +7,3 @@ function sameFrequency(a, b) {
     });
     return JSON.stringify(A.sort()) === JSON.stringify(B.sort());
 }
-//PR

@@ -28,4 +28,3 @@ function charCount(str) {
     //return object at end
     return result
 }
-//PR

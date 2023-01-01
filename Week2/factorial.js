@@ -9,4 +9,3 @@ function factorial(a) {
 
     return a * factorial(a - 1)
 }
-//PR
