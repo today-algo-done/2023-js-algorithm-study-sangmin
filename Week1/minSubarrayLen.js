@@ -18,4 +18,4 @@ function minSubArrayLen(array, num) {
     }
     return Sum
 }
-
+//PR
