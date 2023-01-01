@@ -11,3 +11,4 @@ function productOfArray(a = []) {
     return a[0] * (productOfArray(a.slice(1)))
 
 }
+//PR
