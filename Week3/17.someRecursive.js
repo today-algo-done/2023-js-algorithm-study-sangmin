@@ -12,7 +12,5 @@ function someRecursive(a) {
     // }
     // let e = a.split("");
 
-
-
     return a == (a.split("")) % 2 !== 0
 }
