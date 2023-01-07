@@ -7,7 +7,6 @@ function isSubsequence(a, b) {
         if (a[inda] === b[indb]) {
             inda++
             indb++
-
         } else {
             indb++
         }
@@ -18,3 +17,4 @@ function isSubsequence(a, b) {
         return true     //false
     }
 }
+//PR

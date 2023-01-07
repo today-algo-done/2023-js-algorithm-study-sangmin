@@ -1,12 +1,3 @@
-
-
-function charCount(str) {
-    //do Somthing
-    //return an object with keys that are lowercase alphanumeric characters in the string;
-    //values should be the
-
-}
-
 function charCount(str) {
     //loop over string, for each charcter....
     var result = {};

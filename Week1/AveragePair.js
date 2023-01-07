@@ -11,7 +11,7 @@ function averagePair(a, n) {
     while (start < end) {
         var tmp = a[start] + a[end]
         if (number === tmp) {
-            return true;
+            return true
             /**만약 number 가 비교값보다 크면 */
         } else if (number > tmp) {
             /**시작값 증가 */
@@ -24,3 +24,4 @@ function averagePair(a, n) {
     /** 이도 저도 아니면 실패! */
     return false
 }
+//PR
