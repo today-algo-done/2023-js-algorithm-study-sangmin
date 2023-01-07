@@ -18,7 +18,7 @@
 
 function isPalindrome(a) {
     /** https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/join */
-    return a == a.split("").reverse().join("")
+    return a === a.split("").reverse().join("")
 }
 
 /*
