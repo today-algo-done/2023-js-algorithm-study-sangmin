@@ -1,10 +1,14 @@
 function nestedEvenSum(objected) {
     let num = 0
 
-    for (let i = 0; i < objected; i++) {
-        num += objected[i] && typeof objected[i] === 'object'
-            ? nestedEvenSum(objected[i]) : objected[i] % 2 === 0 ? objected[i] : 0;
+    for (const k in objected) {
+        if (objected[k].constructor === Object) {
+            num += nestedEvenSum(objected[k])
+        } else if (typeof objected[k] === "number" && objected[k] % 2 === 0) {
+            num += objected[k];
+        }
     }
+
     return num;
 }
 
