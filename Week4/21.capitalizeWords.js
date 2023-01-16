@@ -4,6 +4,9 @@ function capitalizeWords(str) {
         const cap = word.toUpperCase();
         return cap
     })
+    /**
+     * return str.map(word => word.toUpperCase());
+     */
 }
 
 capitalizeWords('abc')
