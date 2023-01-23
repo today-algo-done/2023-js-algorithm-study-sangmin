@@ -5,7 +5,7 @@ function solve(num) {
     for (let i; i < n.length; i++) {
         let a = num.indexOf(0);
 
-        if (a != 0) {
+        if (a !== 0) {
             arr.append(a)
         } else {
             arr.pop()
