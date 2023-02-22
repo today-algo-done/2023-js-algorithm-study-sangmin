@@ -5,12 +5,11 @@ function que2(arr = []) {
         if (arr[0] == 'push') {
             arr.append(arr[1])
         } else if (arr[0] === 'pop') {
-            arr.append(pop()).append())
+            arr.append(pop()).append()
         }
 
     }
 }
-
 
 
 
