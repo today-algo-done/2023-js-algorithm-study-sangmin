@@ -1,4 +1,4 @@
-const input = require("fs").readFileSync("/Users/husangmin/Documents/GitHub/stdin").toString().trim().split("\n").map((str) => str.trim())
+const input = require("fs").readFileSync("GitHub/stdin").toString().trim().split("\n").map((str) => str.trim())
 const [T, ...Pwd] = input;
 
 function keylogger(T, Pwd) {
