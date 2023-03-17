@@ -55,7 +55,7 @@ class que2 {
 }
 
 let fs = require('fs');
-let input = fs.readFileSync('/Users/husangmin/Documents/GitHub/stdin').toString().split('\n');
+let input = fs.readFileSync('/GitHub/stdin').toString().split('\n');
 let result = "";
 const que = new que2();
 
