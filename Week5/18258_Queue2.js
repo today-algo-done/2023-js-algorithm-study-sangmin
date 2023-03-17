@@ -1,7 +1,7 @@
 class que2 {
 
     constructor() {
-        this.size = 0;
+        this.sizeA = 0;
         this.head = {
             data: null,
             next: null,
@@ -12,8 +12,8 @@ class que2 {
         };
     }
 
-    size() {
-        return this.size;
+    size1() {
+        return this.sizeA;
     };
 
     front() {
@@ -27,7 +27,7 @@ class que2 {
     }
 
     isEmpty() {
-        return this.size <= 0;
+        return this.sizeA <= 0;
     }
 
     push(data) {
@@ -55,30 +55,31 @@ class que2 {
 }
 
 let fs = require('fs');
-let input = fs.readFileSync('/GitHub/stdin').toString().split('\n');
+let input = fs.readFileSync('/Users/husangmin/Documents/GitHub/stdin').toString().split('\n');
 let result = "";
+const que = new que2();
 
 for (let i = 1; i < input.length; i++) {
     if (input[i] !== '') {
         const [ord, val] = input[i].split(" ");
         switch (ord) {
             case "push":
-                que2.push(num(val));
+                que.push(Number(val));
                 break;
             case "pop":
-                result += (que2.pop() + "\n");
+                result += (que.pop() + "\n");
                 break;
             case "size":
-                result += (que2.size() + "\n");
+                result += (que.size1() + "\n");
                 break;
             case "empty":
-                result += (que2.isEmpty() ? "1\n" : "0\n");
+                result += (que.isEmpty() ? "1\n" : "0\n");
                 break;
             case "front":
-                result += (que2.front() + "\n");
+                result += (que.front() + "\n");
                 break;
             case "back":
-                result += (que2.back() + " \n");
+                result += (que.back() + " \n");
                 break;
         }
     }
