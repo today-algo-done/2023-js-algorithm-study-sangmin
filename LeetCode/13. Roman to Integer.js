@@ -9,16 +9,16 @@ var romanToInt = function (s) {
 
     let result = 0;
 
+
     for (let i = 0; i < s.length; i++) {
-        const num2 = num1[2[i]];
-        const nextNum = numbers[s[i + 1]];
+        const num2 = num1[s[i]]; //지금 문자 숫자화
+        const nextNum = num1[s[i + 1]]; //다음 문자 숫자화
 
-        if (nextNum && num2 >= nextNum) {
-            result += num2;
+        if (nextNum && num2 < nextNum) {
+            result += nextNum - num2;
+            i++;
         } else {
-            if (!nextNum) return result + num2;
-
-            result -= num2;
+            result += num2;
         }
     }
     return result;
